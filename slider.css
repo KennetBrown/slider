@@ -24,3 +24,14 @@ body {
    &.is-dragging {
     cursor: grabbing;
   }
+
+&--wrapper {
+    counter-reset: count;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
