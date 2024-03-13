@@ -35,3 +35,14 @@ body {
     left: 0;
     width: 100%;
   }
+
+  &--item {
+    counter-increment: count;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 100%;
+    padding: 0 1.5vw;
+    overflow: hidden;
