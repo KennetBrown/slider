@@ -127,3 +127,10 @@ body {
     right: 0%;
     background: transparent;
   }
+
+  
+  @media (max-width: 767px) {
+    transform: scale(.6) rotate(45deg) ;
+    right: -100px;
+  }
+}
