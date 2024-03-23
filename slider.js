@@ -19,3 +19,21 @@ Lerp
 const lerp = (v0, v1, t) => {
   return v0 * ( 1 - t ) + v1 * t
 }
+
+/*--------------------
+Dispose
+--------------------*/
+const dispose = (scroll) => {
+  gsap.set($items, {
+    x: (i) => {
+      return i * itemWidth + scroll
+    },
+    modifiers: {
+      x: (x, target) => {
+        const s = gsap.utils.wrap(-itemWidth, wrapWidth - itemWidth, parseInt(x))
+        return `${s}px`
+      }
+    }
+  })
+} 
+dispose(0)
