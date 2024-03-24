@@ -37,3 +37,11 @@ const dispose = (scroll) => {
   })
 } 
 dispose(0)
+
+
+/*--------------------
+Wheel
+--------------------*/
+const handleMouseWheel = (e) => {
+  scrollY -= e.deltaY * 0.9
+}
